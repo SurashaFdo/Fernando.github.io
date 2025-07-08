@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+	
+  <title>Enemy At The Gate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Century Gothic';
+      background-image: url('images/Enemyyy gate.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+      position: relative;
+    }
+
+    .overlay-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.1));
+      padding: 80px 50px 50px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+	  
+	    h2 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .genre, .actors {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    .btn-group a {
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    .btn-custom {
+      background-color: #3bbb97;
+      color: white;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .btn-custom:hover {
+      background-color: #2a9c7e;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #F2F8F8;
+      padding: 10px 30px;
+      font-family: 'Century Gothic';
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      margin-right: auto;
+    }
+
+    .navbar img {
+      width: 140px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 0 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #3bbb97;
+      color: white;
+    }
+
+    .navbar a.active {
+      background-color: #3bbb97;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="logo" href="FlixZone1.html"><img src="images/flix.png" alt="FlixZone Logo"></a>
+    <a href="FlixZone1.html">Home</a>
+    <a href="Explore.html">Explore</a>
+    <a href="MyList.html">My List</a>
+    <a href="Downloads.html">Downloads</a>
+    <a href="MyAccount.html">My Account</a>
+  </nav>
+
+  <!-- Left-side overlay content -->
+  <div class="overlay-left">
+    <h1>Enemy At The Gate</h1>
+	  <br>
+    <p><strong>Enemy at the Gates</strong> is a gripping war drama set during the intense Battle of Stalingrad in World War II. The film follows a skilled Soviet sniper whose deadly accuracy turns him into a symbol of hope for his nation, leading to a high-stakes cat-and-mouse game with a top German marksman. The story blends action, suspense, and emotion against a dramatic wartime backdrop.</p>
+
+    <p class="actors"><strong>Main Actors:</strong><br>
+      Jude Law, Ed Harris, Rachel Weisz, Joseph Fiennes, Bob Hoskins
+    </p>
+    <p class="genre"><strong>Genre:</strong> War, Drama, Thriller, Historical</p>
+	  <p class="genre"><strong>Runtime:</strong> 2 hours 11 minutes </p>
+<br>
+    <div class="btn-group">
+      <a href="MyAccount.html"><button class="btn-custom">Watch with Friends</button></a>
+      <a href="Screen.html"><button class="btn-custom">Watch Now</button></a>
+      <a href="Payment.html"><button class="btn-custom">Download</button></a>
+    </div>
+	  <br><br>
+	  <h2 style="padding-left: 50px">Rs:500/=</h2>
+	  
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

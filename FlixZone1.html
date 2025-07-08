@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlixZone Project</title>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+
+<style>
+  /* GENERAL STYLES */
+  body {
+    background-color: #071C1D;
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 100px;
+    color: #3BBB97;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: #F2F8F8;
+  }
+
+  h4 {
+    color: #F2F8F8;
+  }
+
+  p {
+    color: #9CB79F;
+  }
+
+  /* BACKGROUND SLIDER SECTION */
+  .background-slider {
+    width: 10%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    margin-top: 0px; /* Space for navbar */
+  }
+
+  /* NAVIGATION BAR */
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #F2F8F8;
+    padding: 10px;
+    font-family: 'Century Gothic';
+  }
+
+  .navbar .logo {
+    font-weight: bold;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: #3bbb97;
+  }
+
+  .navbar a.active {
+    background-color: #3bbb97;
+    color: white;
+  }
+	
+	
+	.hero-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin-top: 70px; /* adjust for navbar */
+}
+
+.background-slider {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+  color: #3BBB97;
+}
+
+.hero-content h1 {
+  font-size: 120px;
+  color: #3BBB97;
+}
+
+.hero-content .btn {
+  background-color: #03634d;
+  color: #F2F8F8;
+  outline: 2px solid #F2F8F8;
+  font-size: 25px;
+  margin-top: 30px;
+}
+	
+	.footer {
+  background-color: #03634d;
+  color: white;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 16px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+	
+	
+	.about-us-box {
+    background-color: rgba(3, 99, 77, 0.2); /* Or any other color you prefer */
+    padding: 30px; /* Add some padding inside the box */
+    border-radius: 10px; /* Slightly rounded corners for a softer look */
+    margin-top: 0px; /* Add some space above the box */
+    margin-bottom: 0px; /* Add some space below the box */
+  }
+	.about-us-box2 {
+    background-color: rgba(3, 99, 77, 0.1); /* Or any other color you prefer */
+    padding: 30px; /* Add some padding inside the box */
+    border-radius: 10px; /* Slightly rounded corners for a softer look */
+    margin-top: 0px; /* Add some space above the box */
+    margin-bottom: 0px; /* Add some space below the box */
+  }
+  .about-us-box h4 {
+    color: #F2F8F8; /* Ensure the heading color is visible on the background */
+    margin-bottom: 15px; /* Space between heading and paragraph */
+  }
+
+  .about-us-box p {
+    color: #9CB79F; /* Ensure the paragraph text color is visible on the background */
+    line-height: 1.6; /* Improve readability */
+  }
+	
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light offset-xl-0 col-xl-12"> <a class="navbar-brand" href="FlixZone1.html"><strong><img src="images/flix.png" width="140" alt=""/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong>&nbsp;</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="FlixZone1.html">Home &nbsp;&nbsp; <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="Explore.html">Explore&nbsp; &nbsp;&nbsp;</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="MyList.html">My List&nbsp; &nbsp;&nbsp;</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="Downloads.html">Downloads&nbsp; &nbsp;&nbsp;</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="MyAccount.html">My Account&nbsp; &nbsp;&nbsp;</a> </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    </form>
+  </div>
+</nav>
+
+<!-- BACKGROUND IMAGE SECTION -->
+<div class="hero-section">
+
+  <div class="background-slider" id="slider"></div>
+  <div class="hero-content col-xl-10">
+    <h1 class="text-left"><strong>STREAM. WATCH. ENJOY.</strong></h1>
+    <a href="Register.html">
+      <button type="button" class="btn btn-primary hero-button">
+        <strong>JOIN with us NOW</strong>
+      </button>
+    </a>
+  </div>
+</div>
+
+<!-- MAIN CONTENT (with padding) -->
+<div style="padding: 1px 40px 100px 40px;">
+  
+
+  <h2 class="bold-heading"><strong>&nbsp; Trending Now ___________________________________</strong></h2>
+  <p>&nbsp;</p>
+
+  <div class="row">
+    <div class="col-xl-2"><img src="images/dune.PNG" alt="" width="250" height="350" class="rounded"/>
+      <h4 class="text-center"><strong>DUNE Part 2</strong></h4>
+    </div>
+    <div class="col-xl-2"><img src="images/challengers.PNG" alt="" width="250" height="350" class="rounded"/>
+      <h4 class="text-center"><strong>Challengers</strong></h4>
+    </div>
+    <div class="col-xl-2"><img src="images/brutalist.jpg" alt="" width="250" height="350" class="rounded"/>
+      <h4 class="text-center"><strong>The Brutalist</strong></h4>
+    </div>
+    <div class="col-xl-2"><img src="images/Rani_sinhala_film_poster.jpg" alt="" width="250" height="350" class="rounded"/>
+      <h4 class="text-center"><strong>Rani</strong></h4>
+    </div>
+    <div class="col-xl-2"><img src="images/wicked.jpg" alt="" width="250" height="350" class="rounded"/>
+      <h4 class="text-center"><strong>Wicked</strong></h4>
+    </div>
+  </div>
+
+  <div style="text-align: right;">
+    <a href="Explore.html">
+      <button type="button" class="btn btn-primary" style="background-color: #03634d; color: #F2F8F8; outline: 1px solid #F2F8F8; font-size: 23px;">
+        <strong>Find movies</strong>
+      </button>
+    </a>
+  </div>
+
+  <br><br><br>
+	
+	
+	<h2 align="center"><strong>Get Ready!🤩 5 Fresh Films Hit FlixZone Tomorrow.🚀🍿<br> Don't miss a beat.</strong></h2> <br><br>
+
+ 
+	
+	
+</div>
+	
+<div class="about-us-box">
+    <h4>About Us</h4>
+    <p>
+      FlixZone is Sri Lanka’s premier online film streaming platform, created to bring the joy of cinema directly to your screen. <br>We’re passionate about showcasing the rich storytelling of Sri Lankan filmmakers—whether it’s Sinhala classics, modern <br>Tamil dramas, or groundbreaking local productions.
+
+      Our goal is simple: to make film entertainment more accessible<br> while celebrating the diversity and creativity of Sri Lanka’s cinema culture. At FlixZone, you’ll find a curated collection <br>of local favorites, exclusive premieres, and handpicked international titles—all ready to stream anytime, anywhere.
+
+      <br>We believe in supporting the Sri Lankan film industry by giving talented creators a platform to reach both local and <br>global audiences. By streaming with FlixZone, you’re not just watching a movie—you’re supporting a community, <br>a culture, and a growing industry.
+
+      Stream. Watch. Enjoy. Welcome to FlixZone.
+    </p>
+  </div>
+	
+	<div class="about-us-box2">
+    <h4>Our Growing Collection and Community</h4>
+    <p>
+     As much as we are a platform for films, we are also a community for film lovers. At FlixZone, you're not just a viewer;<br> you're part of a growing movement supporting Sri Lankan and international cinema. We're continuously expanding our library,<br> seeking out the next big hit and the hidden gems you won't find anywhere else. Stay tuned for exclusive premieres,<br> director's cuts, and unique content experiences coming soon – because the world of film is always evolving, and so are we.
+
+    </p>
+  </div>
+	
+	
+	
+	
+	
+
+
+<!-- SCRIPTS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+
+<!-- BACKGROUND SLIDER SCRIPT -->
+<script>
+  const images = [
+    'images/Gump3.jpg',
+    'images/Boh.jpg',
+	  'images/RahasK.jpg',
+	'images/At the Gate.png',
+    'images/willsmith.jpg'
+  ];
+
+  let current = 0;
+  const slider = document.getElementById('slider');
+
+  function changeBackground() {
+    slider.style.backgroundImage = `url('${images[current]}')`;
+    current = (current + 1) % images.length;
+  }
+
+  changeBackground(); // Initial image
+  setInterval(changeBackground, 5000); // Change every 5 seconds
+</script>
+
+	<footer class="footer">
+  <p style="padding-left: 20px">
+    &copy; 2025 FlixZone. All rights reserved.
+    <img src="images/ICONS.png" width="319" height="51" alt="Icons" style="float: right; margin-left: 10px;" />
+  </p>
+</footer>
+	
+</body>
+</html>

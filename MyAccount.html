@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlixZone - My Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Century Gothic';
+      background-color: #032020;
+      color: #f2f8f8;
+    }
+
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+	  margin-top: 125px;
+    }
+
+    .account-left {
+      flex: 1;
+      padding-right: 40px;
+    }
+
+    .account-left h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      background-color: #f2f8f8;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+
+    .details-label {
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"], input[type="email"] {
+      width: 40%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: none;
+      background-color: #1f4c4a;
+      color: #f2f8f8;
+    }
+
+    .side-links a {
+      display: block;
+      margin: 12px 0;
+      color: #f2f8f8;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .btn {
+      background-color: #3bbb97;
+      border: none;
+      color: #f2f8f8;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+  .friends-box {
+  width: 370px;
+  height: 560px;
+  background-color: #f2f8f8;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 50px; 
+}
+
+    .friends-header {
+      background-color: #3bbb97;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .friend-list {
+      padding: 25px;
+      max-height: 450px;
+      overflow-y: auto;
+    }
+
+    .friend {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: black;
+    }
+
+    .friend input[type="checkbox"] {
+      accent-color: #3bbb97;
+      width: 20px;
+      height: 20px;
+    }
+
+    .watch-btn {
+      position: absolute;
+      bottom: 30px;
+      right: 50px;
+    }
+	  
+	 
+	/* Navigation bar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #F2F8F8;
+      padding: 10px 30px;
+      font-family: 'Century Gothic';
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      margin-right: auto;
+    }
+
+    .navbar img {
+      width: 140px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 0 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #3bbb97;
+      color: white;
+    }
+
+    .navbar a.active {
+      background-color: #3bbb97;
+      color: white;
+    }  
+	  
+	  
+	  .footer {
+  background-color: #03634d;
+  color: white;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 16px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+	  
+  </style>
+</head>
+	
+<body>
+
+	 <!-- Navbar -->
+  <nav class="navbar">
+    <a class="logo" href="FlixZone1.html"><img src="images/flix.png" alt="FlixZone Logo"></a>
+    <a href="FlixZone1.html">Home</a>
+    <a href="Explore.html">Explore</a>
+    <a href="MyList.html">My List</a>
+    <a href="Downloads.html">Downloads</a>
+    <a href="MyAccount.html">My Account</a>
+  </nav>
+
+
+	
+  <div class="container">
+    <!-- Left side: Account info -->
+    <div class="account-left">
+      <h1>Surasha Fernando __________________</h1>
+
+      <div class="profile-pic"></div>
+
+      <h2 style="margin-bottom: 10px;">| Account details |</h2><br>
+
+      <label class="details-label">Name</label><br>
+      <input type="text" value="Surasha Fernando"><br>
+
+      <label class="details-label">User Name</label><br>
+      <input type="text" value="surasha123"><br>
+
+      <label class="details-label">Email</label><br>
+      <input type="email" value="surasha@email.com"><br>
+
+      <button class="btn">Log Out</button>
+<br><br>
+      <div class="side-links" style="margin-top: 30px;">
+        <a href="#">Edit Account</a>
+        <a href="#">Settings</a>
+        <a href="#">Watch History</a>
+      </div>
+    </div>
+
+    <!-- Right side: Friends -->
+	  
+    <div class="friends-box">
+      <div class="friends-header">
+        My Friends
+        <span>&#128269;</span>
+      </div>
+      <div class="friend-list">
+        <div class="friend"><span>Keshya Fernando</span><input type="checkbox"></div>
+        <div class="friend"><span>Suraksha Fernando</span><input type="checkbox"></div>
+        <div class="friend"><span>Dinara De Silva</span><input type="checkbox"></div>
+        <div class="friend"><span>Sithanga Silva</span><input type="checkbox"></div>
+        <div class="friend"><span>Dilanya Shenali</span><input type="checkbox"></div>
+        <div class="friend"><span>Madara Pathiraja</span><input type="checkbox"></div>
+        <div class="friend"><span>Ayodya Herath</span><input type="checkbox"></div>
+        <div class="friend"><span>Dewmini Fernando</span><input type="checkbox"></div>
+        <div class="friend"><span>Tharushika Fernando</span><input type="checkbox"></div>
+		<div class="friend"><span>Dewmal Fernando</span><input type="checkbox"></div>
+		<div class="friend"><span>Himasha Samarathunga</span><input type="checkbox"></div>
+		<div class="friend"><span>Shemaya Dilani</span><input type="checkbox"></div>
+		<div class="friend"><span>Somnas Fernando</span><input type="checkbox"></div>
+		<div class="friend"><span>Devminili Silva</span><input type="checkbox"></div>
+		  
+      </div>
+    </div>
+  </div>
+
+  <!-- Watch with Friends button -->
+  <div class="watch-btn">
+    <button class="btn">Watch with Friends</button>
+  </div>
+	<br>
+	<br>
+
+		<footer class="footer">
+  <p style="padding-left: 20px">
+    &copy; 2025 FlixZone. All rights reserved.
+    <img src="images/ICONS.png" width="319" height="51" alt="Icons" style="float: right; margin-left: 10px;" />
+  </p>
+</footer>
+
+</body>
+</html>

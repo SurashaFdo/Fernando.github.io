@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Now - Enemy At The Gates - FlixZone</title> <link href="https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Century Gothic', sans-serif;
+            background-color: #071C1D; /* Dark background */
+            color: #F2F8F8; /* Light text color */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column; /* Stack header, main, footer vertically */
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        /* Header (Optional, for site navigation or branding) */
+        header {
+            background-color:  #F2F8F8;
+            padding: 15px 20px; /* Provides 20px padding on left/right */
+            text-align: left; /* Aligns content within header if not using flex on 'a' */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+       
+
+        /* Style for the logo image in the header */
+        .header-logo {
+            height: 45px; /* Set the height of the logo */
+            margin-right: 20px; /* Space between logo and text */
+            vertical-align: middle; /* Ensures alignment with text, though less critical with flex */
+        }
+
+        /* Main Content Wrapper */
+        .video-page-wrapper {
+            flex-grow: 1; /* Allows this section to take up remaining vertical space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            padding: 20px;
+        }
+
+        /* Video Player Container */
+        .video-container {
+            width: 100%;
+            max-width: 900px; /* Max width for the video player */
+            background-color: #000; /* Black background for video area */
+            border-radius: 10px;
+            overflow: hidden; /* Ensure video corners are rounded */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+        }
+
+        /* Video Details Section */
+        .video-details {
+            width: 100%;
+            max-width: 900px;
+            padding: 25px;
+            background-color: #1a3e3f; /* Darker background for details */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        .video-details h2 {
+            color: #03634d;
+            font-size: 2.5em;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .video-details p {
+            font-size: 1.1em;
+            color: #cccccc;
+            margin-bottom: 15px;
+        }
+
+        .video-details .meta-info {
+            font-size: 0.95em;
+            color: #a0a0a0;
+            margin-top: 20px;
+            border-top: 1px solid #2a5f60;
+            padding-top: 15px;
+        }
+
+        .video-details .meta-info span {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Back Button */
+        .back-button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #3bbb97; /* Orange for call to action */
+            color: #ffffff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #3bbb97;
+            transform: translateY(-2px);
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #03634d;
+            color: #F2F8F8;
+            text-align: left;
+            padding: 20px;
+            margin-top: auto; /* Pushes footer to the bottom */
+            font-size: 0.9em;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .video-page-wrapper {
+                padding: 15px;
+            }
+            .video-details h2 {
+                font-size: 2em;
+            }
+            .video-details p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-details {
+                padding: 15px;
+            }
+            .video-details h2 {
+                font-size: 1.8em;
+            }
+            .back-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="screenings.html">
+            <img src="images/flix.png" alt="FlixZone Logo" class="header-logo">
+            
+        </a>
+    </header>
+
+    <div class="video-page-wrapper">
+        <div class="video-container">
+            <video controls poster="images/enemy-at-the-gates-poster.jpg"> <source src="videos/enemy-at-the-gates-trailer.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-details">
+            <h2>Enemy At The Gates</h2>
+            <p>
+                Released in 2001, "Enemy at the Gates" is a powerful historical war film from Mandalay Pictures and Repérage Films, directed by Jean-Jacques Annaud. Set during the grueling Battle of Stalingrad in World War II, the film plunges viewers into a tense, personal conflict as a legendary Soviet sniper and an equally skilled German counter-sniper engage in a deadly, high-stakes game of cat-and-mouse. Both men become unwitting symbols of their nations' desperate struggle for survival.
+            </p>
+            <div class="meta-info">
+                <span><strong>Genre:</strong> War, Drama, Thriller, Historical</span>
+                <span><strong>Director:</strong> Jean-Jacques Annaud</span>
+                <span><strong>Cast:</strong> Jude Law, Ed Harris, Rachel Weisz, Joseph Fiennes, Bob Hoskins</span>
+                <span><strong>Runtime:</strong> 2h 11m</span>
+                 </div>
+        </div>
+
+        <div class="back-button-container">
+            <a href="Explore.html" class="back-button">Explore More Movies</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+  <p style="padding-left: 20px">
+    &copy; 2025 FlixZone. All rights reserved.
+    <img src="images/ICONS.png" width="319" height="51" alt="Icons" style="float: right; margin-left: 10px;" />
+  </p>
+</footer>
+
+</body>
+</html>
